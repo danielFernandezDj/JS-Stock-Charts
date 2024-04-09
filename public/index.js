@@ -29,7 +29,7 @@ async function main() {
 
     stocks.forEach( stock => stock.values)
 
-    // Time Chart
+    // Time Chart Section!
     new Chart(timeChartCanvas.getContext('2d'), {
         type: 'line',
         data: {
@@ -43,7 +43,7 @@ async function main() {
         }
     });
 
-    // High Chart
+    // High Chart Section!
     new Chart(highestPriceChartCanvas.getContext('2d'), {
         type: 'bar',
         data: {
@@ -63,7 +63,7 @@ async function main() {
         }
     });
 
-    // Average Chart
+    // Average Chart Section!
     new Chart(averagePriceChartCanvas.getContext('2d'), {
         type: 'pie',
         data: {
